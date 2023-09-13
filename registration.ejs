@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CFD6C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .registration-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+  .registration-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registration-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .registration-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .registration-button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+  <div class="registration-container">
+    <h2>Create an Account</h2>
+    <form class="registration-form" method="post" action="/store">
+      <input type="text"  name="name" class="registration-input" placeholder="Full Name">
+      <input type="email" name="email" class="registration-input" placeholder="Email">
+      <input type="password" name="password" class="registration-input" placeholder="Password">
+      <input type="password"  class="registration-input" placeholder="Confirm Password">
+      <input type="tel" name="phonenumber" class="registration-input" placeholder="Phone Number">
+      <input type="text" name="location"  class="registration-input" placeholder="Location">
+      <button type="submit" class="registration-button">Register</button>
+    </form>
+  </div>
+</body>
+</html>
